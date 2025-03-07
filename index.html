@@ -16,20 +16,20 @@
             <h2 class="p-2">Payment form example</h2>
         </div>
         <div class="container">
-            <p class="bg-danger-subtle mt-4 d-flex justify-content-center rounded">somefields are missing</p>
+            <p class="alert alert-danger mt-4 rounded">Some fields are missing</p>
             <div>
                 <div>
                     <div class="row g-3">
                         <div class="col-sm-5">
-                            <label for="Card"class="mb-2">Card #</label>
+                            <label for="Card"class="mb-2 fw-bold">Card #</label>
                             <input type="number" class="form-control" placeholder="xxxxxxxxxxxxx" aria-label="Card">
                         </div>
                         <div class="col-sm-3">
-                            <label for="Card" class="mb-2">CVC #</label>
+                            <label for="Card" class="mb-2 fw-bold">CVC #</label>
                             <input type="number" class="form-control" placeholder="0000" aria-label="CVC">
                         </div>
                         <div class="col-sm-4">
-                            <label for="Card" class="mb-2">Amount</label>
+                            <label for="Card" class="mb-2 fw-bold">Amount</label>
                             <input type="number" class="form-control" placeholder="Amount" aria-label="Postal Code">
                         </div>
                     </div>
@@ -38,28 +38,28 @@
             <div>
                 <form class="row g-3 needs-validation mt-2" novalidate>
                     <div class="col-md-6">
-                        <label for="validationCustom01" class="form-label">First name</label>
+                        <label for="validationCustom01" class="form-label fw-bold">First name</label>
                         <input type="text" class="form-control" id="validationCustom01" value="" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <label for="validationCustom02" class="form-label fw-bold">Last name</label>
                         <input type="text" class="form-control" id="validationCustom02" value="" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="validationCustom03" class="form-label">City</label>
+                        <label for="validationCustom03" class="form-label fw-bold">City</label>
                         <input type="text" class="form-control" id="validationCustom03" required>
                         <div class="invalid-feedback">
                             Please provide a valid city.
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <label for="validationCustom04" class="form-label">State</label>
+                        <label for="validationCustom04" class="form-label fw-bold">State</label>
                         <select class="form-select" id="validationCustom04" required>
                             <option selected disabled value="">Pick a state</option>
                             <option>...</option>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <label for="validationCustom05" class="form-label">Postal Code</label>
+                        <label for="validationCustom05" class="form-label fw-bold">Postal Code</label>
                         <input type="text" class="form-control" id="validationCustom05" required>
                         <div class="invalid-feedback">
                             Please provide a valid zip.
@@ -79,12 +79,12 @@
             </div>
             <div>
                 <div class=" footer row mt-3 d-flex justify-content-between">
-                    <p class=" footer col-md-6 bs-emphasis-color">We accept:</p>
+                    <p class=" footer col-md-6 bs-emphasis-color fw-bold">We accept:</p>
                     <div class="footer form-floating col-md-6">
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <span>add any notes here</span>
+                            <span class="text-body-secondary">add any notes here</span>
                         </div>
                     </div>
                 </div>

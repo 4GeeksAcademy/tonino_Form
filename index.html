@@ -32,90 +32,97 @@
                             <input type="number" class="form-control" placeholder="0000" aria-label="CVC">
                         </div>
                         <div class="col-sm-4">
-                            <label for="Card" class="mb-2 fw-bold">Amount</label>
-                            <input type="number" class="form-control" placeholder="Amount" aria-label="Postal Code">
+                            <label for="validationCustomUsername" class="form-label fw-bold">Amount</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">$</span>
+                                <input type="number" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose an amount.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <form class="row g-3 needs-validation mt-2" novalidate>
-                    <div class="col-md-6">
-                        <label for="validationCustom01" class="form-label fw-bold">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom02" class="form-label fw-bold">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom03" class="form-label fw-bold">City</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid city.
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="validationCustom04" class="form-label fw-bold">State</label>
-                        <select class="form-select" id="validationCustom04" required>
-                            <option selected disabled value="">Pick a state</option>
-                            <option>...</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid state.
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="validationCustom05" class="form-label fw-bold">Postal Code</label>
-                        <input type="text" class="form-control" id="validationCustom05" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid zip.
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div>
-                <div class=" footer row mt-3 d-flex justify-content-between align-items-start">
-                    <div class="col-md-6">
-                        <p class="bs-emphasis-color fw-bold mb-2">We accept:</p>
-                        <div class="d-flex flex-wrap justify-content-between alert bg-secondary rounded col-6 mt-3">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="payment_method" id="visaRadio"
-                                    value="visa">
-                                <label class="form-check-label" for="visaRadio"><i
-                                        class="fa-brands fa-cc-mastercard"></i></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="payment_method" id="mastercardRadio"
-                                    value="mastercard">
-                                <label class="form-check-label" for="mastercardRadio"><i
-                                        class="fa-brands fa-cc-visa"></i></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="payment_method" id="amexRadio"
-                                    value="amex">
-                                <label class="form-check-label" for="amexRadio"><i
-                                        class="fa-brands fa-cc-diners-club"></i></label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="payment_method" id="discoverRadio"
-                                    value="discover">
-                                <label class="form-check-label" for="discoverRadio"><i
-                                        class="fa-brands fa-cc-apple-pay"></i></label>
+                <div>
+                    <form class="row g-3 needs-validation mt-2" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label fw-bold">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
                             </div>
                         </div>
-                    </div>
-                    <div class="footer form-floating col-md-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <span class="text-body-secondary">add any notes here</span>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label fw-bold">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label fw-bold">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label fw-bold">State</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Pick a state</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label fw-bold">Postal Code</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <div class=" footer row mt-3 d-flex justify-content-between align-items-start">
+                        <div class="col-md-6">
+                            <p class="bs-emphasis-color fw-bold mb-2">We accept:</p>
+                            <div class="d-flex flex-wrap justify-content-between alert bg-secondary rounded col-6 mt-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment_method" id="visaRadio"
+                                        value="visa">
+                                    <label class="form-check-label" for="visaRadio"><i
+                                            class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment_method"
+                                        id="mastercardRadio" value="mastercard">
+                                    <label class="form-check-label" for="mastercardRadio"><i
+                                            class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment_method" id="amexRadio"
+                                        value="amex">
+                                    <label class="form-check-label" for="amexRadio"><i
+                                            class="fa-brands fa-cc-diners-club"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment_method"
+                                        id="discoverRadio" value="discover">
+                                    <label class="form-check-label" for="discoverRadio"><i
+                                            class="fa-brands fa-cc-apple-pay"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer form-floating col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <span class="text-body-secondary">add any notes here</span>
+                            </div>
                         </div>
                     </div>
                 </div>
